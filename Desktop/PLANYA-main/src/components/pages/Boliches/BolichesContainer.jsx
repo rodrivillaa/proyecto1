@@ -35,6 +35,7 @@ export const BolichesContainer = () => {
           return (
             <div  key={boliches.id}>
               <h1>{boliches.nombre}</h1>
+              <p>gfvghh</p>
             </div>
           )
         })

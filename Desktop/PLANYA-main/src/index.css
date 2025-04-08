@@ -4,3 +4,36 @@ body{
   box-sizing: border-box;
   background-color: #FFDFBD;
 }
+
+.contenedorComentarios {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #F28C1D;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.listaComentarios .comentario {
+  background: white;
+  padding: 10px;
+  border-left: 3px solid #F28C1D;
+  margin-top: 10px;
+  border-radius: 5px;
+}
