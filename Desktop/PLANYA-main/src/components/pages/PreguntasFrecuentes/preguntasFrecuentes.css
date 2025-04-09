@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 .contenedorPadre h1{
     margin: 120px 0px;
@@ -211,4 +211,107 @@
         width: 300px;
     }
 
-}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos generales */
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    background-color: #ffffff;
+    color: #333;   
+     font-family: "Outfit", sans-serif;
+     margin-top: 50px;
+  }
+  
+  .faq-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #111;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+  }
+  
+  .faq-item {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-item:hover {
+    transform: translateY(-4px);
+  }
+  
+  .faq-item h2 {
+    font-size: 1.5rem;
+    color: #f79234;
+    margin-bottom: 0.8rem;
+  }
+  
+  .faq-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Banner de imagen */
+  .faq-banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+  }
+  
+  .faq-banner img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Animaciones suaves */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .faq-container h1 {
+      font-size: 2rem;
+    }
+  
+    .faq-item h2 {
+      font-size: 1.25rem;
+    }
+  
+    .faq-item p {
+      font-size: 0.95rem;
+    }
+  }
+  

@@ -86,7 +86,7 @@ const ZonaEste = () => {
       {loading ? (
         <div className="loading-container">
           <video
-            src="/cargamotion.mp4"
+            src="/Comp_1_14.mp4"
             autoPlay
             muted
             playsInline
@@ -96,43 +96,56 @@ const ZonaEste = () => {
         </div>
       ) : (
         <>
-          <div className='ContenedorPadreBuscaTU'>
-            <div className='TitulosBuscaTu'>
-              <div className='TitulosBuscaTu_1'>
-                <h2>BUSCA TU<span className="puntos onda"><span>.</span><span>.</span><span>.</span></span></h2>
-              </div>
+          <div className="ContenedorPadreBuscaTU">
+            <div className="header-busca-tu">
+              <h2>
+                BUSCA TU
+                <span className="puntos onda">
+                  <span>.</span>
+                  <span>.</span>
+                  <span>.</span>
+                </span>
+              </h2>
+              <p className="subtitulo">Explorá bares, boliches y más cerca tuyo</p>
             </div>
-            <div className="filtros">
-              <label style={{ fontSize: "20px", fontFamily: "Montserrat", color: "white" }}>
-                Categoria:
-                <select value={categoria} onChange={(e) => setCategoria(e.target.value)}>
-                  <option value="">Todas</option>
-                  <option value="bar">Bar</option>
-                  <option value="boliche">Boliche</option>
-                  <option value="resto">Resto</option>
-                  <option value="cine">Cine</option>
-                  <option value="plazas">Plazas</option>
-                </select>
-              </label>
-              <label style={{ fontSize: "20px", fontFamily: "Montserrat", color: "white" }}>
-                Ubicación:
-                <select value={ubicacion} onChange={(e) => setUbicacion(e.target.value)}>
-                  <option value="">Todas</option>
-                  <option value="CABA">CABA</option>
-                  <option value="AMBA">AMBA</option>
-                  <option value="GBA">Gran Buenos Aires</option>
-                </select>
-              </label>
-              <label style={{ fontSize: "20px", fontFamily: "Montserrat", color: "white" }}>
-                Zona:
-                <select value={zona} onChange={(e) => setZona(e.target.value)}>
-                  <option value="">Todas</option>
-                  <option value="sur">Sur</option>
-                  <option value="este">Este</option>
-                  <option value="oeste">Oeste</option>
-                  <option value="norte">Norte</option>
-                </select>
-              </label>
+
+            <div className="filtros-container">
+              <div className="filtro">
+                <label>
+                  <i className="fas fa-list"></i> Categoría
+                  <select value={categoria} onChange={(e) => setCategoria(e.target.value)}>
+                    <option value="">Todas</option>
+                    <option value="bar">Bar</option>
+                    <option value="boliche">Boliche</option>
+                    <option value="resto">Resto</option>
+                    <option value="cine">Cine</option>
+                    <option value="plazas">Plazas</option>
+                  </select>
+                </label>
+              </div>
+              <div className="filtro">
+                <label>
+                  <i className="fas fa-map-marker-alt"></i> Ubicación
+                  <select value={ubicacion} onChange={(e) => setUbicacion(e.target.value)}>
+                    <option value="">Todas</option>
+                    <option value="CABA">CABA</option>
+                    <option value="AMBA">AMBA</option>
+                    <option value="GBA">Gran Buenos Aires</option>
+                  </select>
+                </label>
+              </div>
+              <div className="filtro">
+                <label>
+                  <i className="fas fa-compass"></i> Zona
+                  <select value={zona} onChange={(e) => setZona(e.target.value)}>
+                    <option value="">Todas</option>
+                    <option value="sur">Sur</option>
+                    <option value="este">Este</option>
+                    <option value="oeste">Oeste</option>
+                    <option value="norte">Norte</option>
+                  </select>
+                </label>
+              </div>
             </div>
           </div>
 
@@ -198,7 +211,6 @@ const ZonaEste = () => {
             </button>
           </div>
 
-          {/* Botón "Volver al inicio" */}
           {paginaActual > 1 && (
             <div className="volver-inicio">
               <button onClick={volverAlInicio} className="boton-volver-inicio">

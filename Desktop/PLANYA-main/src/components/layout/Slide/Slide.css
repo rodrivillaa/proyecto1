@@ -256,3 +256,330 @@ color: #931004;
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Banner */
+.banner_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Textos principales */
+  .text-container {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .text-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #111;
+  }
+  
+  .text-container h3 {
+    color: #555;
+    font-weight: 400;
+  }
+  
+  /* Botón y subtítulo */
+  .btn-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .btn-1 button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    background-color: #f78336;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .btn-1 button:hover {
+    background-color: #f5873d;
+  }
+  
+  .btn-1 p {
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* Slide Cards */
+  .card {
+   
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card-content h3 {
+    margin: 0.5rem 0;
+    color: #222;
+  }
+  
+  .card-content p {
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .ver-mas-btn {
+    margin-top: 0.5rem;
+    background-color: #f04e30;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ver-mas-btn:hover {
+    background-color: #c43e27;
+  }
+  
+  /* Fade-in */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .card-img {
+      height: 160px;
+    }
+  
+    .text-container h1 {
+      font-size: 2rem;
+    }
+     .slide {
+        display: none;
+        max-width: 1300px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+  }
+  
+  .swiper, .swiper-slide {
+
+  }
+  .swiper-wrapper {
+    position: relative;
+    width: 100%;
+  
+    /* height: 100%; */
+    z-index: 1;
+    display: flex
+;
+    transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+    box-sizing: content-box;
+}
+
+    .slide {
+      
+        max-width: 1300px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        height: 500px;
+      }
+
+
+  
+  .swiper {
+    width: 100%;
+ 
+  }
+  
+  .swiper-slide {
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .banner_img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+  }
+  
+  .text-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .text-container h1 {
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: bold;
+  }
+  
+  .text-container h3 {
+    font-size: 1.25rem;
+    color: #555;
+  }
+  
+  .btn-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+ 
+  
+  .btn-1 button:hover {
+    background-color: #ff5c5c;
+  }
+  
+  .btn-1 p {
+    font-style: italic;
+    color: #888;
+  }
+  
+  /* ESTILO GENERAL PARA CADA CARD */
+  .destacado, .swiper-slide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  
+  .destacados, .swiper-slide {
+    width: 300px;
+   
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .destacados:hover, .swiper-slide:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  }
+  
+  .destacados img, .swiper-slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .contenedor {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .info h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .btn button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn button:hover {
+    background-color: #ff5c5c;
+  }
+  
+  .swiper {
+    padding: 2rem 3rem; /* espacio interno general del carrusel */
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+    top: 45%; /* ajustá según tu diseño */
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .swiper-button-prev {
+    left: 25px; /* más espacio a la izquierda */
+  }
+  
+  .swiper-button-next {
+    right: -25px; /* más espacio a la derecha */
+  }
+  
+  .swiper-pagination {
+    margin-top: 2rem !important;
+    position: static !important; /* lo deja fuera del carrusel si querés */
+    text-align: center;
+  }
+  

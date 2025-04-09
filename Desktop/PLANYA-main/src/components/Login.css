@@ -1,0 +1,96 @@
+/* Reset general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+  }
+  
+  /* Fondo de la página */
+  .login-page {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Caja principal del formulario */
+  .login-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Título */
+  .login-box h2 {
+    margin-bottom: 25px;
+    color: #1f2937;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  /* Estilo de los campos */
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+  }
+  
+  /* Icono dentro del input */
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #9ca3af;
+  }
+  
+  /* Botón */
+  .btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #fcae5b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-login:hover {
+    background-color:  #FFDFBD;
+    color: black;
+  }
+  
+  /* Enlace de registro */
+  .register-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .register-link a {
+    color:  #ffb76a;
+    text-decoration: none;
+    font-weight: 500;
+  }  

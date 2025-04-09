@@ -4,6 +4,8 @@ import "./favorites.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Swal from 'sweetalert2';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+
 
 const Favorites = () => {
     const { favorites, removeFavorite } = useContext(FavoritesContext);
@@ -22,7 +24,7 @@ const Favorites = () => {
     }
   
     return (
-      <div>
+      <div className="favorites-section">
         <h2>Mis Favoritos ({favorites.length})</h2>
         <div className="favorites-grid">
           {favorites.map((bar, index) => {
@@ -34,19 +36,16 @@ const Favorites = () => {
                 <img 
                   src={bar.imagenURL || '/placeholder-image.jpg'} 
                   alt={bar.nombre || 'Bar'} 
-                />
-                <h3>{bar.nombre}</h3>
-                <p>{bar.ubicacion}</p>
-                <button onClick={() => removeFavorite(bar.id)}>
-                <FontAwesomeIcon
-              icon={faTrash}
-                style={{
-                  color:  "#931004" ,
-                  borderColor:  "yellow" ,
-                  borderRadius: "2px"
-                }}
-              />
-                </button>
+                  />
+               <div className="button-group">
+                  <h1>{bar.nombre}</h1>
+    <Link to={`/bares/${bar.id}`} className="ver-mas-btn">
+      Ver más
+    </Link>
+    <button onClick={() => removeFavorite(bar.id)} className="delete-btn">
+      <FontAwesomeIcon icon={faTrash} />
+    </button>
+  </div>
               </div>
             );
           })}

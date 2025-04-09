@@ -82,20 +82,7 @@ n de fondo con opacidad */
 
 
 
-.btn{
-    all: unset;
-    background-color: #F28C1D;
-    padding: 5px;
-    border-radius: 5px;
-    width: 90px;
-    text-align: center;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
-    align-items: center;
 
-
-}
 
 .contenedorbtn{
 

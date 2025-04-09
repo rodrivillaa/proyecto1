@@ -1,7 +1,9 @@
 import './navBar.css';
-import pylogo from '../../../assets/images/logopy_Mesa_de_trabajo_1.png';
+import pylogo from '../../../assets/images/LOGOPLANYASD.png';
 import { FaUserAlt } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import LogoutButton from "../../LogoutButton";
+
 
 const NavBar = () => {
   return (
@@ -18,9 +20,10 @@ const NavBar = () => {
             <Link to="/zonaeste">Categorias</Link>
             <Link to="/favoritos">Favoritos</Link>
             <Link to="/mapa">Mi Mapa</Link>
+            <Link to="/registro">Registrarse</Link>
             <Link to="/preguntas">Ayuda</Link>
-            <Link to="/login">Iniciar sesión</Link> {/* <-- Aca lo agregás */}
-            <Link to="/registro">Registrarse</Link> {/* ← Nuevo link */}
+           {/* <-- Aca lo agregás */}
+            <Link to="/nosotros">Nosotros</Link> 
            
           </ul>
         </div>
@@ -31,6 +34,7 @@ const NavBar = () => {
             <p><FaUserAlt /></p>
             
             </Link> 
+            <LogoutButton />
           </div>
         </div>
       </div>

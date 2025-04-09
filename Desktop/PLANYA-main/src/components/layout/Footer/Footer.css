@@ -5,8 +5,9 @@
 .contenedor-footer{
     display: flex;
     background-color: #F28C1D;
-    height:500px;
+    height:300px;
     margin-top: 150px;
+    width: 100%;
 }
 .datos{
     display: flex;
@@ -15,19 +16,23 @@
 
 .contenedor-datos{
     display: flex;
-    gap: 880px;
+    justify-content: space-between;
     margin: 20px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Outfit", sans-serif;
     border-bottom: 1px solid black;
     max-height: 300px;
+    width: 100%;
+    margin-left: 60px;
 }
 
 .nosotros  .ayuda .sucursales h1{
-    font-size: 16px;
+    margin-top: 30px;
+    font-size: 18px;
 }
 
 .contenedor-datos p{
-    font-size: 12px;
+    font-size: 16px;
+    margin-top: 10px;
 }
 .imagen{
     display: flex;

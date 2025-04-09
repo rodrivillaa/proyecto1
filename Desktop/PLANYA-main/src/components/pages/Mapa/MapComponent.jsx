@@ -77,7 +77,7 @@ if (loading) {
     <div className="loading-container">
       {/* Puedes cambiar este video por una imagen GIF o texto de carga */}
       <video
-  src="/cargamotion.mp4"
+  src="/Comp_1_14.mp4"
   autoPlay
   muted
   playsInline // Importante para móviles

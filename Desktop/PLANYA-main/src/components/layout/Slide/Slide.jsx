@@ -59,12 +59,7 @@ export default () => {
                   <h3>Desde - ${bar.precio}</h3>
                   <h3>{bar.ubicacion}</h3>
                 </div>
-                <div className='btn'>
-                    <Link  to={`/bares/${bar.id}`}>
-                  <button>Ver Más</button>
-                    
-                    </Link>
-                </div>
+             
               </div>
             </div>
           ))}
@@ -73,7 +68,7 @@ export default () => {
       <div className='slide'>
         <Swiper
           
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          modules={[ Pagination, Scrollbar, A11y]}
           spaceBetween={-150}
           slidesPerView={3}
           navigation

@@ -3,26 +3,28 @@
 
 *{
     text-decoration: none;
+    font-family: "Outfit", sans-serif;
 }
 
 
 
 .contenedor_navbar_padre{
-    background-color:  #F28C1D;
+    background-color:  #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 0px;
+
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
-    font-family: "Montserrat", sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 
 
 .logo_img img {
     width: 100px;
+    margin: 20px;
 }
 
 
@@ -39,7 +41,7 @@
 .contenedor_de_navegacion a {
     color: #000000;
     padding: 36px 10px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 /* .contenedor_de_navegacion a:hover{
     background-color: #F28C1D;
@@ -54,9 +56,10 @@
 
 .contenedor_de_navegacion ul a {
     position: relative;
-    color: #ffffff; /* Color inicial del texto */
+    color: #000000; /* Color inicial del texto */
     overflow: hidden;
     z-index: 2;
+    font-family: "Outfit", sans-serif;
 }
 
 .contenedor_de_navegacion ul a::before {
@@ -76,7 +79,7 @@
 }
 
 .contenedor_de_navegacion ul a:hover {
-    color: #fff; /* Cambia el color del texto al hacer hover */
+    color: #000000; /* Cambia el color del texto al hacer hover */
 }
 
 
@@ -91,16 +94,29 @@
 
 .sub_contenedor_busqueda p{
 
-    margin: 11px;
+    margin: 11;
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #000000;
-    width:90px;
+    width:40px;
+}
+.logout{
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    width:20px;
+}
+.sub_contenedor_busqueda p:hover{
+    color:#f18d30;
+    transition: 1s;
 }
 
-.sub_contenedor_busqueda p:hover{
-    color: #fff;
+.logout:hover{
+    color: #f18d30;
     transition: 1s;
 }
 

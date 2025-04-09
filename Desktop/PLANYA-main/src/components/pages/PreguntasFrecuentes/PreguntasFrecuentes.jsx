@@ -1,52 +1,59 @@
 
-import "./preguntasFrecuentes.css"
-import bannerlogo from '../../../assets/images/pyaa_Mesa_de_trabajo_1.png'
-
+import "./preguntasFrecuentes.css";
+import bannerlogo from '../../../assets/images/LOGOPLANYASD.png';
+import { useEffect } from 'react';
 
 const PreguntasFrecuentes = () => {
+  useEffect(() => {
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    elements.forEach(el => observer.observe(el));
+  }, []);
+
   return (
-    <div className="contenedorPadre">
-        <h1>PREGUNTAS FRECUENTES</h1>
-        
+    <div className="faq-container">
+      <h1 className="fade-in">PREGUNTAS FRECUENTES</h1>
 
-      <div className="contenedor_1" >
-        <h2>¿Que es PlanYa?</h2>
-        <p> 
-            PlanYA es una plataforma que te permite descubrir y compartir planes y actividades de manera sencilla y efectiva, ajustadas a tus intereses y necesidades.  
-        </p>
-      </div>
-
-
-      <div className="contenedor_2" >
-        <h2>¿Como funciona PlanYA?</h2>
+      <div className="faq-item fade-in">
+        <h2>¿Qué es PlanYA?</h2>
         <p>
-            PlanYA te muestra planes recomendados según tus preferencias. Puedes explorar categorías, ver planos populares y recibir sugerencias personalizadas. También puedes compartir tus propios planos con la comunidad.
+          PlanYA es una plataforma que te permite descubrir y compartir planes y actividades de manera sencilla y efectiva, ajustadas a tus intereses y necesidades.
         </p>
       </div>
 
-
-      <div className="contenedor_3" >
-        <h2>¿PlanYa tiene un costo?</h2>
+      <div className="faq-item fade-in">
+        <h2>¿Cómo funciona PlanYA?</h2>
         <p>
-            La aplicación es completamente gratuita.
+          PlanYA te muestra planes recomendados según tus preferencias. Puedes explorar categorías, ver planes populares y recibir sugerencias personalizadas. También puedes compartir tus propios planes con la comunidad.
         </p>
       </div>
 
+      <div className="faq-item fade-in">
+        <h2>¿PlanYA tiene un costo?</h2>
+        <p>
+          La aplicación es completamente gratuita.
+        </p>
+      </div>
 
-
-      <div className="contenedor_4" >
+      <div className="faq-item fade-in">
         <h2>¿Cómo puedo contactar al soporte?</h2>
         <p>
-            Puedes contactarnos a través del formulario de contacto en nuestra web o enviando un correo a soporte @planya.com .Nuestro equipo de atención al cliente estará encantado de ayudarle.
+          Puedes contactarnos a través del formulario de contacto en nuestra web o enviando un correo a <strong>soporte@planya.com</strong>. Nuestro equipo estará encantado de ayudarte.
         </p>
       </div>
 
-
-      <div className="contenedor_5" >
-        <img src={bannerlogo} alt="" />
+      <div className="faq-banner fade-in">
+        <img src={bannerlogo} alt="Logo PlanYA" />
       </div>
-
     </div>
-  )
-}
-export default PreguntasFrecuentes
+  );
+};
+
+export default PreguntasFrecuentes;
