@@ -27,15 +27,15 @@ const NavBar = () => {
 
         <div className='contenedor_de_busqueda_principal'>
           <div className='sub_contenedor_busqueda'>
-            <input type="search" placeholder='Buscar'/>
+            <Link to="/login">
             <p><FaUserAlt /></p>
+            
+            </Link> 
           </div>
         </div>
       </div>
 
-      <div className='contenedor_planifica'>
-        <h2>Planifica menos, vivi mas.</h2>
-      </div>
+ 
     </div>
   );
 };

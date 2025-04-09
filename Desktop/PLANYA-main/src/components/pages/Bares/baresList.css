@@ -80,12 +80,14 @@
     align-items: center;
     width: 800px;
     height: 800px;
+    background-color: white;
 
 }
 
 .loading-container{
     display: flex;
     justify-content: center;
+    background-color: white;
 
     padding: 10px;
 }

@@ -10,9 +10,9 @@ import { Link } from 'react-router-dom';
 
 // Ícono personalizado con imagen PNG
 const customIcon = L.icon({
-  iconUrl: "/iconored.png", // Cambia esto a la URL de tu imagen PNG
-  iconSize: [24, 40], // Tamaño de tu imagen (ajústalo según tu preferencia)
-  iconAnchor: [16, 32], // Punto donde el ícono se "ancla" en el marcador
+  iconUrl: "/public/ubupy.png", // Cambia esto a la URL de tu imagen PNG
+  iconSize: [35, 41], // Tamaño de tu imagen (ajústalo según tu preferencia)
+  iconAnchor: [19, 32], // Punto donde el ícono se "ancla" en el marcador
   popupAnchor: [0, -32], // Posición del popup en relación con el ícono
 });
 

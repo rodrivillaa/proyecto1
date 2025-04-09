@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.banner_img{
-
+.banner_img {
     align-items: center;
-    display: flex;
+    display: flex
+;
     justify-content: center;
     margin: 0 auto;
-    max-width: 1100px;
+    /* max-width: 1100px; */
+    /* overflow: visible; */
+    width: auto;
 }
 
 .banner_img img{
     margin-bottom: 50px;
     border-bottom: 5px solid #F28C1D;
+    width: 100%;
 }
 
 .slide img{
